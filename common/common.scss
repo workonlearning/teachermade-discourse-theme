@@ -23,18 +23,18 @@
   padding-bottom: 32px;
 }
 
-.search-bar {
-  padding: 16px !important;
-  border-radius: 8px !important;
+.search-wrapper .search-bar {
+  padding: 16px;
+  border-radius: 8px;
   width: 80%;
   margin: auto;
 }
 
-.search-button {
-  padding: 8px 16px !important;
-  background: transparent !important;
-  border-radius: 8px !important;
-  width: 160px !important;
+.search-wrapper .search-button {
+  padding: 8px 16px;
+  background: transparent;
+  border-radius: 8px;
+  width: 160px;
 }
 
 .about.admins [data-username="chrispollard"] {
