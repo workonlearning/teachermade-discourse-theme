@@ -14,17 +14,8 @@
   display: none;
 }
 
-.search-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .search-wrapper .search-bar {
-  padding: 16px;
+  padding: 10px;
   border-radius: 8px;
   width: 80%;
   margin: auto;
