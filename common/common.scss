@@ -1,0 +1,54 @@
+.hamburger-panel .widget-link[href="/faq"] {
+  display: none;
+}
+
+.hamburger-panel .widget-link[href="/about"] {
+  display: none;
+}
+
+.nav-item-faq {
+  display: none;
+}
+
+.nav-item-about {
+  display: none;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.search-bar {
+  padding: 16px !important;
+  border-radius: 8px !important;
+  width: 80%;
+  margin: auto;
+}
+
+.search-button {
+  padding: 8px 16px !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+  width: 160px !important;
+}
+
+.about.admins [data-username="chrispollard"] {
+display: none;
+}
+
+.about.admins [data-username="jasonkeum"] {
+display: none;
+}
+
+.about.admins [data-username="Ricardo_Havill"] {
+display: none;
+}
+
+.about.contact {
+display: none;
+}

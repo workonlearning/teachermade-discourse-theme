@@ -1,0 +1,56 @@
+<script type="text/discourse-plugin" version="0.8">
+  api.addNavigationBarItem({
+    name: "link-to-support-category",
+    displayName: "Support",
+    href: "/c/support",
+    title: "Support Topics"
+  })
+  api.addNavigationBarItem({
+    name: "link-to-feedback-category",
+    displayName: "Feedback / Suggestions",
+    href: "/c/feedback-suggestions",
+    title: "Feedback & Suggestions"
+  })
+  api.addNavigationBarItem({
+    name: "link-to-updates-category",
+    displayName: "Product Updates",
+    href: "/c/product-updates",
+    title: "Product Updates"
+  })
+  api.addNavigationBarItem({
+    name: "link-to-teacher-talk-category",
+    displayName: "Teacher Talk",
+    href: "/c/professional-learning-community",
+    title: "Teacher Talk"
+  })
+  api.addNavigationBarItem({
+    name: "link-to-marketplace-category",
+    displayName: "Marketplace",
+    href: "/c/TeacherMadeMarketplaceDiscussion",
+    title: "Marketplace"
+  })
+  let loadScript = require('discourse/lib/load-script').default;
+  api.onPageChange((url, title) => {
+    window.searchForum = () => {
+      const query = document.getElementById('searchField').value;
+      if (query) {
+        window.location.assign(`https://forum.teachermade.com/search?q=${encodeURI(query)}`)
+      }
+    }
+    document.getElementById('searchButton').addEventListener('click', window.searchForum)
+    document.getElementById('searchField').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        window.searchForum();
+      }
+    });
+  });
+</script>
+
+<!-- Use reopenWidget to override the home-logo widget and send a user to the TeacherMade site when the logo is clicked. -->
+<script type="text/discourse-plugin" version="0.8.13">
+api.reopenWidget("home-logo", {
+  href() {
+    return 'https://app.teachermade.com/app/';
+  },
+});
+</script>
