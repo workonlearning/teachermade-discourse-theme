@@ -32,6 +32,15 @@
   width: 160px;
 }
 
+/* Hide custom search on the search results page */
+.search-page .search-wrapper {
+  display: none;
+}
+
+/* Hide New Topic button on search results page */ 
+.search-page button[aria-label="New Topic"] {
+  display: none;
+}
 
 .about.admins [data-username="chrispollard"] {
   display: none;
