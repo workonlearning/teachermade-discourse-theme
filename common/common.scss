@@ -44,3 +44,9 @@
 .about.contact {
   display: none;
 }
+
+/* Remove the navigation bar and navigation controls from the home page only. */
+.navigation-categories #navigation-bar,
+.navigation-categories .navigation-controls {
+  display: none;
+}
