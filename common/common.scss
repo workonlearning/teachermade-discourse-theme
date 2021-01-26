@@ -75,3 +75,8 @@
 body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
   display: none;
 }
+
+/* Hide the timeline scroller that appears next to a post */ 
+.timeline-scrollarea-wrapper {
+  display: none;
+}
