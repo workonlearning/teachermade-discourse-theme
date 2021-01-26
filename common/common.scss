@@ -59,3 +59,8 @@
 .icons .search-dropdown {
   display: none;
 }
+
+/* Hide the welcome text box, when not on the home page. */
+body:not(.navigation-categories) #tm-welcome-text {
+  display: none;
+}
