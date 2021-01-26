@@ -60,8 +60,10 @@
 
 /* Remove the navigation bar and navigation controls from the home page only. */
 .navigation-categories #navigation-bar,
-.navigation-categories .navigation-controls {
-  display: none;
+.navigation-categories .navigation-controls,
+.navigation-topics #navigation-bar,
+.navigation-topics .navigation-controls {
+    display: none;
 }
 
 /* Hide search icon in user menu. */ 
@@ -70,6 +72,6 @@
 }
 
 /* Hide the welcome text box, when not on the home page. */
-body:not(.navigation-categories) #tm-welcome-text {
+body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
   display: none;
 }
