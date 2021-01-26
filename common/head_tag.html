@@ -34,7 +34,7 @@
     window.searchForum = () => {
       const query = document.getElementById('searchField').value;
       if (query) {
-        window.location.assign(`https://forum.teachermade.com/search?q=${encodeURI(query)}`)
+        window.location.assign(`/search?q=${encodeURI(query)}`)
       }
     }
     document.getElementById('searchButton').addEventListener('click', window.searchForum)
