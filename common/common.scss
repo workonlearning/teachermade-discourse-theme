@@ -95,3 +95,11 @@ body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
 #navigation-bar li {
   display: none;
 }
+
+/* Only display the message suggesting to post to community category from support category/subcategory pages. */
+#tm-post-to-community {
+  display: none;
+}
+body[class*="category-support"] #tm-post-to-community {
+  display: block;
+}
