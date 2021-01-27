@@ -59,10 +59,8 @@
 }
 
 /* Remove the navigation bar and navigation controls from the home page only. */
-.navigation-categories #navigation-bar,
-.navigation-categories .navigation-controls,
-.navigation-topics #navigation-bar,
-.navigation-topics .navigation-controls {
+.navigation-categories .list-controls,
+.navigation-topics .list-controls {
     display: none;
 }
 
