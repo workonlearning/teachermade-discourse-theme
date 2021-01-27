@@ -106,3 +106,12 @@ body:not(.home-page) #tm-welcome-text {
 body[class*="category-support"] #tm-post-to-community {
   display: block;
 }
+
+/* Make the home page category boxes occupy the entire width of the parent box */ 
+.category-boxes {
+  justify-content: stretch;
+}
+.category-boxes .category-box {
+  flex: 1 1 0px;
+  width: auto;
+}
