@@ -78,3 +78,9 @@ body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
 .timeline-scrollarea-wrapper {
   display: none;
 }
+
+/* Set max width and height for topic logo images. */ 
+.category-logo.aspect-image {
+  max-height: 48px;
+  max-width: 48px;
+}
