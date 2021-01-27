@@ -32,6 +32,10 @@
   width: 160px;
 }
 
+/* Hide custom search on the home page */
+.home-page .search-wrapper {
+  display: none;
+}
 /* Hide custom search on the search results page */
 .search-page .search-wrapper {
   display: none;
