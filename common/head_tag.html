@@ -1,34 +1,4 @@
 <script type="text/discourse-plugin" version="0.8">
-  api.addNavigationBarItem({
-    name: "link-to-support-category",
-    displayName: "Support",
-    href: "/c/support",
-    title: "Support Topics"
-  })
-  api.addNavigationBarItem({
-    name: "link-to-feedback-category",
-    displayName: "Feedback / Suggestions",
-    href: "/c/feedback-suggestions",
-    title: "Feedback & Suggestions"
-  })
-  api.addNavigationBarItem({
-    name: "link-to-updates-category",
-    displayName: "Product Updates",
-    href: "/c/product-updates",
-    title: "Product Updates"
-  })
-  api.addNavigationBarItem({
-    name: "link-to-teacher-talk-category",
-    displayName: "Teacher Talk",
-    href: "/c/professional-learning-community",
-    title: "Teacher Talk"
-  })
-  api.addNavigationBarItem({
-    name: "link-to-marketplace-category",
-    displayName: "Marketplace",
-    href: "/c/TeacherMadeMarketplaceDiscussion",
-    title: "Marketplace"
-  })
   let loadScript = require('discourse/lib/load-script').default;
   api.onPageChange((url, title) => {
     window.searchForum = () => {
