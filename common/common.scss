@@ -72,11 +72,6 @@
   display: none;
 }
 
-/* Hide the welcome text box, when not on the home page. */
-body:not(.home-page) #tm-welcome-text {
-  display: none;
-}
-
 /* Hide the timeline scroller that appears next to a post */ 
 .timeline-scrollarea-wrapper {
   display: none;
