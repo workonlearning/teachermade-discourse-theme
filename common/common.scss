@@ -90,3 +90,8 @@ body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
   display: flex;
   align-items: center;
 }
+
+/* Hide navigation bar items. */ 
+#navigation-bar li {
+  display: none;
+}
