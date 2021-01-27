@@ -79,8 +79,14 @@ body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
   display: none;
 }
 
-/* Set max width and height for topic logo images. */ 
+/* Set max width and height for catogory logo images. */ 
 .category-logo.aspect-image {
   max-height: 48px;
   max-width: 48px;
+}
+
+/* Vertically center the text next to the logo in a category heading. */ 
+.category-heading {
+  display: flex;
+  align-items: center;
 }
