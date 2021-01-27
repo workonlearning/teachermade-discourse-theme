@@ -59,8 +59,7 @@
 }
 
 /* Remove the navigation bar and navigation controls from the home page only. */
-.navigation-categories .list-controls,
-.navigation-topics .list-controls {
+.home-page .list-controls {
     display: none;
 }
 
@@ -70,7 +69,7 @@
 }
 
 /* Hide the welcome text box, when not on the home page. */
-body:not(.navigation-categories):not(.navigation-topics) #tm-welcome-text {
+body:not(.home-page) #tm-welcome-text {
   display: none;
 }
 

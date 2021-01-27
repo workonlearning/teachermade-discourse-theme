@@ -37,3 +37,15 @@ api.reopenWidget("home-logo", {
       ]);
   });
 </script>
+
+<!-- Add a custom class to the body tag for the home page -->
+<script type="text/discourse-plugin" version="0.8">
+  api.onPageChange((url, title) => {
+    if (url === '/') {
+      $('body').addClass('home-page');
+    }
+    else {
+      $('body').removeClass('home-page');
+    }
+  });
+</script>
