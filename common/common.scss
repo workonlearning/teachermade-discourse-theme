@@ -77,7 +77,7 @@
   display: none;
 }
 
-/* Set max width and height for catogory logo images. */ 
+/* Set max width and height for category logo images. */ 
 .category-logo.aspect-image {
   max-height: 48px;
   max-width: 48px;
@@ -89,8 +89,12 @@
   align-items: center;
 }
 
-/* Hide navigation bar items. */ 
-#navigation-bar li {
+/*
+  Hide Discourse navigation bar items, but keep custom items. The Discourse
+  items in the navigation bar all seem to have "topics" in their title, so we
+  will remove those.
+*/ 
+#navigation-bar li[title*="topics"] {
   display: none;
 }
 

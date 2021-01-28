@@ -1,3 +1,4 @@
+<!-- Provide functionality for custom search bar near the top of the page. -->
 <script type="text/discourse-plugin" version="0.8">
   let loadScript = require('discourse/lib/load-script').default;
   api.onPageChange((url, title) => {
@@ -38,7 +39,11 @@ api.reopenWidget("home-logo", {
   });
 </script>
 
-<!-- Add a custom class to the body tag for the home page -->
+<!-- 
+  Add a custom class to the body tag for the home page. This allows us to 
+  use CSS in common.css to show/hide things based on whether we are on the 
+  home page
+-->
 <script type="text/discourse-plugin" version="0.8">
   api.onPageChange((url, title) => {
     if (url === '/') {
@@ -48,4 +53,18 @@ api.reopenWidget("home-logo", {
       $('body').removeClass('home-page');
     }
   });
+</script>
+
+<!-- Add a link to the /tags page in the navigation bar for the Community category. -->
+<script type="text/discourse-plugin" version="0.8">
+  api.addNavigationBarItem({
+    name: "link-to-tags",
+    displayName: "Browse all tags",
+    href: "/tags",
+    title: "Browse all of the forum tags",
+    customFilter: (category, args, router) => {
+      //return category && category.name === 'Community'
+      return category && category.slug === 'community'
+    }
+  })
 </script>
