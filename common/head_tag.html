@@ -62,9 +62,9 @@ api.reopenWidget("home-logo", {
     displayName: "Browse all tags",
     href: "/tags",
     title: "Browse all of the forum tags",
-    customFilter: (category, args, router) => {
-      //return category && category.name === 'Community'
-      return category && category.slug === 'community'
-    }
+    // At some point, we might want to only add the custom link in specific situations.
+    // customFilter: (category, args, router) => { -->
+    //   return category && category.slug === 'community'
+    // }
   })
 </script>
