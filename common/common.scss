@@ -114,3 +114,46 @@ body[class*="category-support"] #tm-post-to-community {
   flex: 1 1 0px;
   width: auto;
 }
+
+/* BEGIN Search by Topic styles */
+/* Only display Search by Topic on the home page */ 
+#tm-search-by-topic-section {
+  display: none;
+}
+.home-page #tm-search-by-topic-section {
+  display: block;
+}
+
+#tm-search-by-topic-section {
+  margin: -100px 0 0 0;
+  position: relative;
+}
+
+#tm-search-by-topic-wrapper {
+  /*margin: 0 1% 1.5em 1%;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  max-width: calc(100% - 16px);
+  width: 1110px;
+}
+
+#tm-search-by-topic {
+  flex: 1 1 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+#tm-search-by-topic h2,
+#tm-search-by-topic h4 {
+  margin-left: 20px;
+}
+
+#tm-search-by-topic .category-box {
+  flex-direction: column
+}
+
+#tm-search-by-topic ul {
+  list-style-type: none;
+}
+/* END Search by Topic style */
