@@ -140,7 +140,7 @@ body[class*="category-support"] #tm-post-to-community {
 
 #tm-search-by-topic {
   flex: 1 1 0px;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   width: auto;
 }
 
@@ -150,7 +150,9 @@ body[class*="category-support"] #tm-post-to-community {
 }
 
 #tm-search-by-topic .category-box {
-  flex-direction: column
+  flex: none;
+  flex-direction: column;
+  width: 30%;
 }
 
 #tm-search-by-topic ul {
