@@ -69,7 +69,19 @@ api.reopenWidget("home-logo", {
   })
 </script>
 <script type="text/discourse-plugin" version="0.8">
-  console.log('Discourse', Discourse);
-  console.log('this', $(this));
-  console.log('api', api);
+  var tmAccordions = document.getElementsByClassName("tm-accordion");
+  var tmIndex;
+
+  for (tmIndex = 0; tmIndex < tmAccordions.length; tmIndex++) {
+    tmAccordions[tmIndex].addEventListener("click", function() {
+      console.log('clicked accordion this', this, 'next', this.nextElementSibling)
+      this.classList.toggle("tm-accordion-active");
+      var tmPanel = this.nextElementSibling;
+      if (tmPanel.style.maxHeight) {
+        tmPanel.style.maxHeight = null;
+      } else {
+        tmPanel.style.maxHeight = tmPanel.scrollHeight + "px";
+      } 
+    });
+  }
 </script>
