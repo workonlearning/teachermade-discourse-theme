@@ -115,6 +115,11 @@ body[class*="category-support"] #tm-post-to-community {
   width: auto;
 }
 
+/* Add custom color for people from the “teachermade_official” user group */
+.topic-post.group-teachermade_official .topic-body {
+  background-color: #ffffd0;
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
@@ -195,4 +200,4 @@ body[class*="category-support"] #tm-post-to-community {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-/* END Search by Topic style */
+/* END Search by Topic styles */
