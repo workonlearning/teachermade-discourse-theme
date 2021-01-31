@@ -142,6 +142,12 @@ body[class*="category-support"] #tm-post-to-community {
 .hamburger-dropdown .icon svg {
   color: #585cc5;
 }
+/* Use a TeacherMade color for the category page topics list header. */
+table.topic-list th,
+table.topic-list th button svg.d-icon {
+  color: #585cc5;
+  font-weight: bold;
+}
 
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
