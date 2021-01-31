@@ -130,6 +130,15 @@ body[class*="category-support"] #tm-post-to-community {
   display: none;
 }
 
+/* Replace the SVG home page icon in the header with a custom image */ 
+.d-header-icons a[title="Home"] svg {
+  display: none;
+}
+.d-header-icons a[title="Home"] {
+  /*background-image: url(http://localhost/home-icon.png);*/
+  background-image: url($home-icon);
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
