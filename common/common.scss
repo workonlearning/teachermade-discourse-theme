@@ -135,8 +135,12 @@ body[class*="category-support"] #tm-post-to-community {
   display: none;
 }
 .d-header-icons a[title="Home"] {
-  /*background-image: url(http://localhost/home-icon.png);*/
   background-image: url($home-icon);
+}
+
+/* Use a TeacherMade color for the hamburger menu SVG icon. */
+.hamburger-dropdown .icon svg {
+  color: #585cc5;
 }
 
 /* BEGIN Search by Topic styles */
