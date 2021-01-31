@@ -130,6 +130,11 @@ body[class*="category-support"] #tm-post-to-community {
   display: none;
 }
 
+/* In the Community category, hide the tags. */ 
+.topic-list-item.category-community .discourse-tags {
+  display: none;
+}
+
 /* Replace the SVG home page icon in the header with a custom image */ 
 .d-header-icons a[title="Home"] svg {
   display: none;
