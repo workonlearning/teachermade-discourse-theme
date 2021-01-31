@@ -119,6 +119,11 @@ body[class*="category-support"] #tm-post-to-community {
   background-color: #ffffd0;
 }
 
+/* Bold the topic titles on the category pages. */ 
+.topic-list-item .title {
+  font-weight: bold;
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
