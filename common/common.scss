@@ -154,6 +154,11 @@ table.topic-list th button svg.d-icon {
   font-weight: bold;
 }
 
+/* Vertically center the custom Back button under the title of the topic page. */ 
+#topic-title .title-wrapper {
+  align-items: center;
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
