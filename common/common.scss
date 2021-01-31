@@ -124,6 +124,12 @@ body[class*="category-support"] #tm-post-to-community {
   font-weight: bold;
 }
 
+/* In just the KB category, hide the tags and the content snippet. */ 
+.topic-list-item.category-knowledge-base .topic-excerp,
+.topic-list-item.category-knowledge-base .discourse-tags {
+  display: none;
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
