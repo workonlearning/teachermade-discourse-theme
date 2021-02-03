@@ -14,3 +14,8 @@
 .category-heading p {
   padding: 0 10px;
 }
+
+/* Bold the topic titles that appear beneath each category on the home page. */ 
+.topic-inset .title {
+  font-weight: bold;
+}
