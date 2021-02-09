@@ -159,6 +159,19 @@ table.topic-list th button svg.d-icon {
   align-items: center;
 }
 
+/* Hide the checkbox that is displayed by the discourse-solved plugin next to topic titles in lists. */ 
+.topic-statuses .topic-status svg.d-icon-far-square,
+.topic-statuses .topic-status svg.d-icon-far-check-square {
+  display: none;
+}
+/* Display the word "Solved" next to topic titles in lists for solved topics. */
+.topic-status[title="This topic has a solution"]::after {
+  content: "SOLVED";
+  color: green;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* BEGIN Search by Topic styles */
 /* Only display Search by Topic on the home page */ 
 #tm-search-by-topic-section {
