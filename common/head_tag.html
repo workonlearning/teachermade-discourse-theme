@@ -2,18 +2,24 @@
 <script type="text/discourse-plugin" version="0.8">
   let loadScript = require('discourse/lib/load-script').default;
   api.onPageChange((url, title) => {
-    window.searchForum = () => {
-      const query = document.getElementById('searchField').value;
+    const tmSearchField = document.getElementById('tmSearchField');
+    const tmSearchButton = document.getElementById('tmSearchButton');
+    window.tmSearchForum = () => {
+      const query = tmSearchField && tmSearchField.value;
       if (query) {
-        window.location.assign(`/search?q=${encodeURI(query)}`)
+        window.location.assign(`/search?q=${encodeURI(query)}`);
       }
     }
-    document.getElementById('searchButton').addEventListener('click', window.searchForum)
-    document.getElementById('searchField').addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        window.searchForum();
-      }
-    });
+    if (tmSearchButton) {
+      tmSearchButton.addEventListener('click', window.tmSearchForum);
+    }
+    if (tmSearchField) {
+      document.getElementById('tmSearchField').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          window.tmSearchForum();
+        }
+      });
+    }
   });
 </script>
 
